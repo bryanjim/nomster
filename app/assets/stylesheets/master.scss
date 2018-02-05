@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome";
 @import url('https://fonts.googleapis.com/css?family=Rammetto+One');
 
 .booyah-box {
@@ -32,4 +33,8 @@ font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill
 .navbar-inverse .navbar-brand {
   color: #4a8fe8;
   font-family: 'Rammetto One', cursive;
+}
+
+.top-icon{
+  color: rgba(255,255,255,0.5);
 }

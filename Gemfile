@@ -57,6 +57,8 @@ gem 'will_paginate' , '>3.0'
 
 gem 'simple_form'
 
+gem 'font-awesome-rails'
+
 gem 'popper_js', '~> 1.11.1'
 gem 'bootstrap', '4.0.0.alpha6'
 
