@@ -89,7 +89,7 @@
 <% end %>
 </div>
 
-<div class="booyah-box">
+<!-- <div class="booyah-box">
 <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
   <%= f.input :caption %>
   <%= f.input :picture %>
@@ -97,9 +97,9 @@
 <% end %>
 
 <h1>Photos</h1>
-<%= @place.photos.each do |photo| %>
+<% @place.photos.each do |photo| %>
 <div>
-  <%= image_tag photo.picture %>
+  <%= image_tag photo.picture, class: "places-picture" %>
   <%= photo.caption %>
 </div>
-  <% end %>
+  <% end %> -->
