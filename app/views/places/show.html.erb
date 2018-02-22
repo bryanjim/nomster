@@ -114,14 +114,19 @@
       </blockquote>
       <% end %>
     </div>
-
-  <!-- <div class="clear"></div>
+<div class="clear"></div>
 <div class="row">
-<% @place.photos.each do |photo| %>
-<div>
-<%= image_tag photo.picture, class: "places-picture" %>
-<%= photo.caption %>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+
+      <% @place.photos.each do |photo| %>
+        <div class="carousel-item active">
+          <%= image_tag photo.picture, class: 'img-fluid' %>
+          <div class="carousel-caption d-none d-md-block">
+            <h3><%= photo.caption %></h3>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
 </div>
-<% end %>
-</div>
--->
