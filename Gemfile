@@ -58,7 +58,7 @@ gem 'simple_form'
 gem 'font-awesome-rails'
 gem 'devise'
 gem 'popper_js', '~> 1.11.1'
-gem 'bootstrap', '4.0.0.alpha6'
+gem "bootstrap", ">= 4.1.2"
 gem 'geocoder'
 gem 'figaro'
 gem 'fog-aws'
