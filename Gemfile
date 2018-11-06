@@ -57,7 +57,7 @@ gem 'will_paginate' , '>3.0'
 gem 'simple_form'
 gem 'font-awesome-rails'
 gem 'devise'
-gem 'popper_js', '~> 1.11.1'
+gem 'popper_js', ">= 1.12.9"
 gem "bootstrap", ">= 4.1.2"
 gem 'geocoder'
 gem 'figaro'
