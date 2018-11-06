@@ -1,10 +1,75 @@
+<!-- <script>
+  $(document).ready(function(){
+    $(".create-btn").attr("disabled", "true");
+    $(".description").blur(function(){
+      if ($(this).val() != "") {
+        $(".create-btn").removeAttr("disabled");
+      } else {
+        $(".create-btn").attr("disabled", "true");
+      }
+    });
+  });
+</script> -->
+
+<script>
+  $(document).ready(function() {
+  action();
+  $('#place_description').on('keyup', action);
+  function action(){
+    if($('#place_description').val().length > 0){
+      $('input[type=submit]').prop("disabled", false);
+    } else {
+      $("input[type=submit]").prop("disabled", true);
+      }
+    }
+  });
+</script>
+
+<!-- <script>
+  $(document).ready(function() {
+  validate();
+  $('input').on('keyup', validate);
+});
+
+function validate() {
+  var inputsWithValues = 0;
+  
+  // get all input fields except for type='submit'
+  var myInputs = $("input:not([type='submit'])");
+
+  myInputs.each(function(e) {
+    // if it has a value, increment the counter
+    if ($(this).val()) {
+      inputsWithValues += 1;
+    }
+  });
+
+  if (inputsWithValues == myInputs.length) {
+    $("input[type=submit]").prop("disabled", false);
+  } else {
+    $("input[type=submit]").prop("disabled", true);
+  }
+}
+  // clear btn function
+$(document).ready(function() {
+  clear();
+  $('.clear-btn').on('click', clear);
+});
+
+function clear() {
+  var myInputs = $("input:not([type='submit'])");
+  myInputs.reset();
+
+}
+</script> -->
+
 <div class="booyah-box col-10 offset-1">
 <h1>Enter Your Place Details</h1>
 <%= simple_form_for @place do |f| %>
   <%= f.input :name %>
   <%= f.input :address %>
-  <%= f.input :description %>
+  <%= f.input :description, input_html:{class: 'description'} %>
   <br />
-  <%= f.submit 'Create', class: 'btn btn-primary' %>
+  <%= f.submit 'Create', class: 'create-btn btn btn-primary' %>
 <% end %>
 </div>
