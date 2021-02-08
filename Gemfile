@@ -62,7 +62,7 @@ gem "bootstrap", ">= 4.1.2"
 gem 'geocoder'
 gem 'figaro'
 gem 'fog-aws'
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
